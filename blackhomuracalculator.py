@@ -24,4 +24,8 @@ terminal screen."""
     if age == x or y or z:
         print(f"[*] Type in the age that the user has to input.")
 
+    if age >= 18:
+        print(f"You are {age} year old and a adult")
+    else:
+        print(f"You are {age} year old. Get a life and study hard.")
 age()
