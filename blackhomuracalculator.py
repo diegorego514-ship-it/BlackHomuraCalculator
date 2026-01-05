@@ -28,4 +28,10 @@ terminal screen."""
         print(f"You are {age} year old and a adult")
     else:
         print(f"You are {age} year old. Get a life and study hard.")
+
+user_age = int(input("Enter age: "))
+
+def age_check():
+        age_check(user_age)
+
 age()
