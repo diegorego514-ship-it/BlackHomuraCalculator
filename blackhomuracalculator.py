@@ -1,17 +1,15 @@
 import os
 import sys
+import math
 
-def int(b):
+def number():
+    """Calculates the numbers that the user inputs and then displays to the
+    terminal screen."""
+    x = int(input("Num1:"))
+    y = int(input("Num2:"))
+    z = int(input("Num3:"))
+    num = 5
+    if num == x or y or z:
+        print(f"[*] Type in the number that the user has to input.")
 
-    def int (a = b + 5 * 10):
-    
-        def int (result):
-            result, int(result)
-            result (a = b + 5 * 10)
-            int (result)
-            print(f"[''write in your age: '']")
-            print(f"[''write in your name: '']")
-            try: 
-                print(f"[''write in what you want to input in:'']")
-            except:
-                print(f"['You have your first print'']")
+number()
