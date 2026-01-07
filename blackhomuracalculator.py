@@ -1,7 +1,3 @@
-import os
-import sys
-import math
-
 def number():
     """Calculates the numbers that the user inputs and then displays to the
 terminal screen."""
@@ -20,7 +16,8 @@ terminal screen."""
     x = int(input("Age1:"))
     y = int(input("Age2:"))
     z = int(input("Age3:"))
-    age = 5
+    
+    age = 18
     if age == x or y or z:
         print(f"[*] Type in the age that the user has to input.")
 
@@ -30,8 +27,5 @@ terminal screen."""
         print(f"You are {age} year old. Get a life and study hard.")
 
 user_age = int(input("Enter age: "))
-
-def age_check():
-        age_check(user_age)
 
 age()
