@@ -24,7 +24,7 @@ SAFE_ENV = {
 # ---------------- AGE CALCULATOR ----------------
 def calculate_age():
     try:
-        print("📅 Age Calculator")
+        print("Age Calculator")
         y = int(input("Birth year: "))
         m = int(input("Birth month: "))
         d = int(input("Birth day: "))
@@ -42,9 +42,9 @@ def calculate_age():
             years -= 1
             months += 12
 
-        print(f"🎂 Age: {years} years, {months} months, {days} days\n")
+        print(f"Age: {years} years, {months} months, {days} days\n")
     except:
-        print("❌ Invalid date\n")
+        print("Invalid date\n")
 
 # ---------------- BMI CALCULATOR ----------------
 def calculate_bmi():
@@ -58,9 +58,9 @@ def calculate_bmi():
             "Overweight" if bmi < 30 else
             "Obese"
         )
-        print(f"📊 BMI: {round(bmi,2)} ({category})\n")
+        print(f"BMI: {round(bmi,2)} ({category})\n")
     except:
-        print("❌ Invalid input\n")
+        print("Invalid input\n")
 
 # ---------------- NUMBER SYSTEM ----------------
 def number_system_converter():
@@ -73,7 +73,7 @@ def number_system_converter():
         print(f"Decimal: {dec}")
         print(f"Hex: {hex(dec)}\n")
     except:
-        print("❌ Invalid number/base\n")
+        print("Invalid number/base\n")
 
 # ---------------- CURRENCY CONVERTER ----------------
 def currency_converter():
@@ -89,9 +89,9 @@ def currency_converter():
         frm = input("From (USD/INR/EUR/GBP/JPY): ").upper()
         to = input("To (USD/INR/EUR/GBP/JPY): ").upper()
         result = (amt / rates[frm]) * rates[to]
-        print(f"💱 Converted Amount: {round(result,2)} {to}\n")
+        print(f"Converted Amount: {round(result,2)} {to}\n")
     except:
-        print("❌ Invalid currency\n")
+        print("Invalid currency\n")
 
 # ---------------- COMPOUND INTEREST ----------------
 def compound_interest():
@@ -101,10 +101,10 @@ def compound_interest():
         t = float(input("Time (years): "))
         n = int(input("Compounds per year: "))
         amount = p * (1 + r / (100 * n)) ** (n * t)
-        print(f"💰 Final Amount: {round(amount,2)}")
-        print(f"📈 Interest: {round(amount-p,2)}\n")
+        print(f"Final Amount: {round(amount,2)}")
+        print(f"Interest: {round(amount-p,2)}\n")
     except:
-        print("❌ Invalid input\n")
+        print("Invalid input\n")
 
 # ---------------- UNIT CONVERTER ----------------
 def unit_converter():
@@ -126,15 +126,15 @@ Units:
             c = float(input("Celsius: "))
             print(f"Fahrenheit: {(c*9/5)+32}\n")
         else:
-            print("❌ Invalid choice\n")
+            print("Invalid choice\n")
     except:
-        print("❌ Invalid input\n")
+        print("Invalid input\n")
 
 # ---------------- MAIN CALCULATOR ----------------
 def homura_expression_calculator():
     history = []
 
-    print("🔥 HOMURA ALL-IN-ONE CALCULATOR 🔥")
+    print("HOMURA ALL-IN-ONE CALCULATOR")
     print("""
 Commands:
  history   clear   exit
@@ -159,16 +159,16 @@ Tips:
         cmd = expr.lower()
 
         if cmd == "exit":
-            print("👋 Goodbye")
+            print("Goodbye")
             break
         if cmd == "history":
-            print("\n".join(history) if history else "📭 No history\n")
+            print("\n".join(history) if history else "No history\n")
             continue
         if cmd == "clear":
             history.clear()
             if readline:
                 readline.clear_history()
-            print("🧹 Cleared\n")
+            print("Cleared\n")
             continue
         if cmd == "age":
             calculate_age(); continue
@@ -189,9 +189,9 @@ Tips:
             history.append(f"{expr} = {res}")
             if readline:
                 readline.add_history(expr)
-            print(f"✅ Result: {res}\n")
+            print(f"Result: {res}\n")
         except:
-            print("❌ Invalid expression\n")
+            print("Invalid expression\n")
 
 
 if __name__ == "__main__":
